@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Panel_Control.master.cs" Inherits="Presentacion_Control_Ingreso.Panel_Control1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Control de Visitas</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Master.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="navbar" position="center">
+                <select>
+                    <option>EMPLEADOS</option>
+                    <option>CREAR EMPLEADO</option>
+                    <option>ADMINISTRAR EMPLEADOS</option>
+                </select>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
