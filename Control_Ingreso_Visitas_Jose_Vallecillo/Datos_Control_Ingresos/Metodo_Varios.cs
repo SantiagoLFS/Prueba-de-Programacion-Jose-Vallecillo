@@ -44,7 +44,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_select_empleado", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();

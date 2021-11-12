@@ -19,7 +19,7 @@
                     <li id="item"></li>
                     <li id="item"><a href="#">Administrar Empleado</a>
                         <ul id="des">
-                            <li><a href="../Administrar_Usuario.aspx">Agregar Empleado</a></li>
+                            <li><a href="../Agregar_Empleado.aspx">Agregar Empleado</a></li>
                             <li><a href="#">Eliminar Empleado</a></li>
                         </ul>
                     </li>

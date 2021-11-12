@@ -67,35 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administrar_Empleado.aspx" />
-    <Content Include="Administrar_Ubicacion.aspx" />
-    <Content Include="Administrar_Usuario.aspx" />
+    <Content Include="Agregar_Empleado.aspx" />
     <Content Include="Pagina_maestra\Panel_de_Control.aspx" />
     <Content Include="Pagina_maestra\Styles\Master.css" />
-    <Content Include="Registro_de_Visita.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrar_Empleado.aspx.cs">
-      <DependentUpon>Administrar_Empleado.aspx</DependentUpon>
+    <Compile Include="Agregar_Empleado.aspx.cs">
+      <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrar_Empleado.aspx.designer.cs">
-      <DependentUpon>Administrar_Empleado.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administrar_Ubicacion.aspx.cs">
-      <DependentUpon>Administrar_Ubicacion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrar_Ubicacion.aspx.designer.cs">
-      <DependentUpon>Administrar_Ubicacion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Administrar_Usuario.aspx.cs">
-      <DependentUpon>Administrar_Usuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrar_Usuario.aspx.designer.cs">
-      <DependentUpon>Administrar_Usuario.aspx</DependentUpon>
+    <Compile Include="Agregar_Empleado.aspx.designer.cs">
+      <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pagina_maestra\Panel_Control.Master.cs">
       <DependentUpon>Panel_Control.Master</DependentUpon>
@@ -112,13 +95,6 @@
       <DependentUpon>Panel_de_Control.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro_de_Visita.aspx.cs">
-      <DependentUpon>Registro_de_Visita.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registro_de_Visita.aspx.designer.cs">
-      <DependentUpon>Registro_de_Visita.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

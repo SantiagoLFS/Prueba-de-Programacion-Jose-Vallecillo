@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades_Control_Ingreso
 {
-    public class Entidades_Empleado // variables empleado 
+    public class Entidades_Empleado
     {
-        public int id_empleado{ set; get; }
-        public string nombre_empleado { set; get; }
-        public string apellido_empleado { set; get; }
+        public int Id_empleado{ set; get; }
+        public string Nombre_empleado { set; get; }
+        public string Apellido_empleado { set; get; }
     }
 }

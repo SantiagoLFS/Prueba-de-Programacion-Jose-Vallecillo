@@ -8,7 +8,7 @@ using Datos_Control_Ingresos;
 using Entidades_Control_Ingreso;
 namespace Negocios_Control_Ingresos
 {
-    class Negocios_Empleado
+    public class Negocios_Empleado
     {
         public static DataTable Listar()// llama al metodo listar de la capa datos de la clase metodos varios 
         {
@@ -19,9 +19,9 @@ namespace Negocios_Control_Ingresos
         {
             Metodos_Empleado upd= new Metodos_Empleado();
             Entidades_Empleado vari = new Entidades_Empleado();
-            vari.id_empleado = id_empleado;
-            vari.nombre_empleado = nombre_empleado;
-            vari.apellido_empleado = apellido_empleado;
+            vari.Id_empleado = id_empleado;
+            vari.Nombre_empleado = nombre_empleado;
+            vari.Apellido_empleado = apellido_empleado;
             return upd.Insert_empleado(vari);
         }//fin insertar
         public static string Eliminar_empleado(int id) //llama al metodo eliminar de la capa datos de la clase metodos varios 
@@ -33,12 +33,12 @@ namespace Negocios_Control_Ingresos
         {
             Metodos_Empleado upd = new Metodos_Empleado();
             Entidades_Empleado vari = new Entidades_Empleado();
-            vari.id_empleado = id_empleado;
-            vari.nombre_empleado = nombre_empleado;
-            vari.apellido_empleado = apellido_empleado;
+            vari.Id_empleado = id_empleado;
+            vari.Nombre_empleado = nombre_empleado;
+            vari.Apellido_empleado = apellido_empleado;
             return upd.Update_empleado(vari);
         }//fin actualizar
-        public static DataTable buscar(string valor)
+        public static DataTable Buscar(string valor)
         {
             Metodo_Varios busc = new Metodo_Varios();
             return busc.Buscar(valor);

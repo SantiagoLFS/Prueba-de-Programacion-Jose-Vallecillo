@@ -17,11 +17,11 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_inser_empleado", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.nombre_empleado ;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.apellido_empleado ;
+                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
+                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado ;
+                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado ;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
             }
@@ -48,9 +48,9 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.nombre_empleado;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.apellido_empleado;
+                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
+                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado;
+                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ACTUALIZO EL REGISTRO";
             }

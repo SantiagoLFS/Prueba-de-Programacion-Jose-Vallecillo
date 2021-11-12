@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\bin\Debug\Entidades_Control_Ingreso.dll
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\bin\Debug\Entidades_Control_Ingreso.pdb
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\obj\Debug\Entidades_Control_Ingreso.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\obj\Debug\Entidades_Control_Ingreso.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\obj\Debug\Entidades_Control_Ingreso.dll
+C:\Users\Dell\source\repos\Prueba-de-Programacion-Jose-Vallecillo\Control_Ingreso_Visitas_Jose_Vallecillo\Entidades_Control_Ingreso\obj\Debug\Entidades_Control_Ingreso.pdb

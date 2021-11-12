@@ -8,8 +8,8 @@ namespace Entidades_Control_Ingreso
 {
     class Entidades_Ubicacion
     {
-        public int id_ubicacion { set; get; }
-        public string descrip_ubicacion { set; get; }
+        public int Id_ubicacion { set; get; }
+        public string Descrip_ubicacion { set; get; }
         
     }
 }

@@ -8,9 +8,9 @@ namespace Entidades_Control_Ingreso
 {
     class Entidades_Usuario
     {
-        public string nombre_usuario { set; get; }
-        public string contrasena_usuario { set; get; }
-        public int id_empleado { set; get; }
-        public int id_tipo { set; get; }
+        public string Nombre_usuario { set; get; }
+        public string Contrasena_usuario { set; get; }
+        public int Id_empleado { set; get; }
+        public int Id_tipo { set; get; }
     }
 }

@@ -8,8 +8,8 @@ namespace Entidades_Control_Ingreso
 {
     class Entidades_Visita
     {
-        public int id_visita { set; get; }
-        public string nombre_visita { set; get; }
-        public string apellido_visita { set; get; }
+        public int Id_visita { set; get; }
+        public string Nombre_visita { set; get; }
+        public string Apellido_visita { set; get; }
     }
 }
