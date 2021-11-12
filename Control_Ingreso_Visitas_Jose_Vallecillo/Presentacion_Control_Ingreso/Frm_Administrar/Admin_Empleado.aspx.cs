@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Presentacion_Control_Ingreso
 {
-    public partial class Admin_Empleado : System.Web.UI.Page
+    public partial class Admin_Empleado 
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
 
         }

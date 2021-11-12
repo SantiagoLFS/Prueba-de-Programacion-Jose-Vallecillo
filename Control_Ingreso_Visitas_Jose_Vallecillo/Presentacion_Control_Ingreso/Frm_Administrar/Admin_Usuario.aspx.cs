@@ -13,5 +13,10 @@ namespace Presentacion_Control_Ingreso
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

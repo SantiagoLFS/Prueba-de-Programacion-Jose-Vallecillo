@@ -19,7 +19,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("sp_inser_visita", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = variables.Id_visita;
+                comando.Parameters.Add("@identidad_visitante", SqlDbType.Int).Value = variables.Identidad_visitante;
                 comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = variables.Nombre_visita;
                 comando.Parameters.Add("@apellido_visita", SqlDbType.VarChar).Value = variables.Apellido_visita;
                 cn.Open();
@@ -48,7 +48,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = variables.Id_visita;
+                comando.Parameters.Add("@identidad_visita", SqlDbType.Int).Value = variables.Identidad_visitante;
                 comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = variables.Nombre_visita;
                 comando.Parameters.Add("@apellido_visita", SqlDbType.VarChar).Value = variables.Apellido_visita;
                 cn.Open();
