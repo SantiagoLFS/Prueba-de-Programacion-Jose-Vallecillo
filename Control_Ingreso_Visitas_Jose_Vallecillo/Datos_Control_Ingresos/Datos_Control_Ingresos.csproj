@@ -49,6 +49,7 @@
     <Compile Include="Metodos_Usuario.cs" />
     <Compile Include="Metodos_Visita.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Metodos_Reportes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades_Control_Ingreso\Entidades_Control_Ingreso.csproj">

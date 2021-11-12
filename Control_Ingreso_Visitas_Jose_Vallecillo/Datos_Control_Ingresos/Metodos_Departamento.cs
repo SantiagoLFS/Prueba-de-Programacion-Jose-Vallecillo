@@ -17,7 +17,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_eliminar_departamento", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("@id_departamento", SqlDbType.Int).Value = id;
                 cn.Open();

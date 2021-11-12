@@ -92,8 +92,8 @@
     <Content Include="Pagina_maestra\Styles\Master_Sty.css" />
     <Content Include="Pagina_maestra\Sitio_Control.aspx" />
     <Content Include="Registro_Visita.aspx" />
-    <Content Include="Reporte_por_Departamento.aspx" />
     <Content Include="Reporte_Por_Fecha.aspx" />
+    <Content Include="Reporte_Visitas_Departamento.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -210,19 +210,19 @@
     <Compile Include="Registro_Visita.aspx.designer.cs">
       <DependentUpon>Registro_Visita.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Reporte_por_Departamento.aspx.cs">
-      <DependentUpon>Reporte_por_Departamento.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reporte_por_Departamento.aspx.designer.cs">
-      <DependentUpon>Reporte_por_Departamento.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Reporte_Por_Fecha.aspx.cs">
       <DependentUpon>Reporte_Por_Fecha.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Reporte_Por_Fecha.aspx.designer.cs">
       <DependentUpon>Reporte_Por_Fecha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Visitas_Departamento.aspx.cs">
+      <DependentUpon>Reporte_Visitas_Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte_Visitas_Departamento.aspx.designer.cs">
+      <DependentUpon>Reporte_Visitas_Departamento.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

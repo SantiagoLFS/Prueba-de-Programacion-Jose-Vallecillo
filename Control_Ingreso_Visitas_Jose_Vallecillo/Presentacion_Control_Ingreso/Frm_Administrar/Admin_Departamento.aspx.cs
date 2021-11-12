@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Configuration;
 using System.Web.UI.WebControls;
 using Negocios_Control_Ingresos;
 namespace Presentacion_Control_Ingreso
@@ -22,6 +23,14 @@ namespace Presentacion_Control_Ingreso
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        protected void g_Admin_Departamento(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
+            Negocios_Departamento.Eliminar_departamento(int.Parse(GridView1.DataKeys[e.RowIndex].Value.ToString()));
+            GridView1.DataSource = Negocios_Departamento.Listar();
+            GridView1.DataBind();
         }
     }
 }
