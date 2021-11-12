@@ -102,9 +102,8 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_inser_departamento", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_departamento", SqlDbType.Int).Value = variables.Id_departamento;
                 comando.Parameters.Add("@nombre_departamento", SqlDbType.VarChar).Value = variables.Nombre_departamento;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
@@ -130,9 +129,8 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_update_departamento", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_departamento", SqlDbType.Int).Value = variables.Id_departamento;
                 comando.Parameters.Add("@nombre_departamento", SqlDbType.VarChar).Value = variables.Nombre_departamento;
                 
                 cn.Open();

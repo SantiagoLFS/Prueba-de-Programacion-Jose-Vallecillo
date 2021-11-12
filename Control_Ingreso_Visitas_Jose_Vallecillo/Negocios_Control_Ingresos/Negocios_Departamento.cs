@@ -9,18 +9,17 @@ using Datos_Control_Ingresos;
 using Entidades_Control_Ingreso;
 namespace Negocios_Control_Ingresos
 {
-    class Negocios_Departamento
+    public class Negocios_Departamento
     {
         public static DataTable Listar()// llama al metodo listar de la capa datos de la clase metodos varios 
         {
             Metodos_Departamento datos = new Metodos_Departamento();
             return datos.Listar();
         }//fin listar
-        public static string Insert_departamento(int id_departamento, string nombre_departamento) // llama el metodo insertar de la capa datos de la clase metodos_empleado
+        public static string Insert_departamento(string nombre_departamento) // llama el metodo insertar de la capa datos de la clase metodos_empleado
         {
             Metodos_Departamento upd = new Metodos_Departamento();
             Entidades_Departamento vari = new Entidades_Departamento();
-            vari.Id_departamento = id_departamento;
             vari.Nombre_departamento = nombre_departamento;
             return upd.Insert_departamento(vari);
         }//fin insertar
@@ -29,11 +28,10 @@ namespace Negocios_Control_Ingresos
             Metodos_Departamento dele = new Metodos_Departamento();
             return dele.Eliminar(id);
         }//fin eliminar
-        public static string Update_departamento(int id_departamento, string nombre_departamento) // llama el metodo actualizar de la capa datos de la clase metodos_empleado
+        public static string Update_departamento( string nombre_departamento) // llama el metodo actualizar de la capa datos de la clase metodos_empleado
         {
             Metodos_Departamento upd = new Metodos_Departamento();
             Entidades_Departamento vari = new Entidades_Departamento();
-            vari.Id_departamento = id_departamento;
             vari.Nombre_departamento = nombre_departamento;
             return upd.Update_departamento(vari);
         }//fin actualizar
