@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion_CI.cs" />
+    <Compile Include="Metodos_Departamento.cs" />
     <Compile Include="Metodos_Empleado.cs" />
     <Compile Include="Metodos_Tipo.cs" />
     <Compile Include="Metodos_Ubicacion.cs" />

@@ -23,19 +23,9 @@ namespace Presentacion_Control_Ingreso
         {
 
         }
-        private void verificar()
-        {
-            try
-            {
-                Negocios_Usuario.Verificar(TextBox1.Text, TextBox2.Text);
-            }catch(Exception ex)
-            {
-
-            }
-        }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            verificar();
+         
         }
     }
 }

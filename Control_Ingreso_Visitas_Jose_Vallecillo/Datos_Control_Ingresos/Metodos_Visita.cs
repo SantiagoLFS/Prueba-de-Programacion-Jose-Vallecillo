@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using Entidades_Control_Ingreso;
 namespace Datos_Control_Ingresos
 {
-    class Metodos_Visita
+    public class Metodos_Visita
     {
         public string Insert_visita(Entidades_Visita variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
         {
@@ -153,6 +153,6 @@ namespace Datos_Control_Ingresos
                 }
 
             }
-        }/
+        }
     }
 }
