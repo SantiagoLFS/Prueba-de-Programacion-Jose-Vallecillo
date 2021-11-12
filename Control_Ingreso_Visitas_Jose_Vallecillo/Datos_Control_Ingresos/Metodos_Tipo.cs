@@ -17,7 +17,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_eliminar_tipo", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("@id_tipo_usuario", SqlDbType.Int).Value = id;
                 cn.Open();
@@ -45,7 +45,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_select_tipo_usuario", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();

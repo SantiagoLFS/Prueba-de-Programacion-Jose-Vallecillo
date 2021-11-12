@@ -8,7 +8,7 @@ namespace Entidades_Control_Ingreso
 {
     public class Entidades_Tipo
     {
-        public int Id_tipo { set; get; }
+        public int Id_tipo_usuario { set; get; }
         public string Descrip_tipo { set; get; }
       
     }
