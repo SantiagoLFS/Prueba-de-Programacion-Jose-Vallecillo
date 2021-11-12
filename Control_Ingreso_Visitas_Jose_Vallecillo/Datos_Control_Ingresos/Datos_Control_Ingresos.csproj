@@ -42,16 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion_CI.cs" />
+    <Compile Include="Metodos_Empleado.cs" />
+    <Compile Include="Metodo_Varios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades_Control_Ingreso\Entidades_Control_Ingreso.csproj">
       <Project>{ebc15f2a-7d1d-4527-8ec4-239e60894f9f}</Project>
       <Name>Entidades_Control_Ingreso</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Negocios_Control_Ingresos\Negocios_Control_Ingresos.csproj">
-      <Project>{59ca39a9-f690-48f7-a358-6e59f9b2abee}</Project>
-      <Name>Negocios_Control_Ingresos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

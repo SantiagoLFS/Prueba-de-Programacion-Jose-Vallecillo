@@ -12,18 +12,34 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <div id="navbar" position="center">
-                <select>
-                    <option>EMPLEADOS</option>
-                    <option>CREAR EMPLEADO</option>
-                    <option>ADMINISTRAR EMPLEADOS</option>
-                </select>
+        <div id="menu">
+                <ul>
+                    <li>&nbsp;</li>
+                    <li id="item"></li>
+                    <li id="item"></li>
+                    <li id="item"><a href="#">Administrar Empleado</a>
+                        <ul id="des">
+                            <li><a href="../Administrar_Usuario.aspx">Agregar Empleado</a></li>
+                            <li><a href="#">Eliminar Empleado</a></li>
+                        </ul>
+                    </li>
+                    <li id ="item"><a href="#">Administrar Ubicacion</a></li>
+                    <li id="item"><a href="#">Crear Nuevo Usuario</a></li>
+                    <li>&nbsp; </li>
+                    <li>
+                        <br />
+                    </li>
+                </ul>
             </div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+             <br />
+&nbsp;
+        
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 
             </asp:ContentPlaceHolder>
-        </div>
+            
+        
     </form>
 </body>
 </html>

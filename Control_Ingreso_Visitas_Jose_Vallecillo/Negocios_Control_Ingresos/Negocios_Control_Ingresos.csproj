@@ -44,9 +44,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Presentacion_Control_Ingreso\Presentacion_Control_Ingreso.csproj">
-      <Project>{06bacaca-1217-467b-89b1-78817956dbd5}</Project>
-      <Name>Presentacion_Control_Ingreso</Name>
+    <ProjectReference Include="..\Datos_Control_Ingresos\Datos_Control_Ingresos.csproj">
+      <Project>{31c9e267-d6ae-4c3e-8867-26dc9e551112}</Project>
+      <Name>Datos_Control_Ingresos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades_Control_Ingreso\Entidades_Control_Ingreso.csproj">
+      <Project>{ebc15f2a-7d1d-4527-8ec4-239e60894f9f}</Project>
+      <Name>Entidades_Control_Ingreso</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
