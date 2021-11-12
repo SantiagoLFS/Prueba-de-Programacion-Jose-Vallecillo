@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Presentacion_Control_Ingreso
+namespace Presentacion_Control_Ingreso.Pagina_maestra
 {
-    public partial class Panel_Control1 : System.Web.UI.MasterPage
+    public partial class Sitio : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

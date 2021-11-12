@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using Entidades_Control_Ingreso;
 namespace Datos_Control_Ingresos
 {
-    public class Metodos_Empleado
+    public class Metodos_Tipo
     {
         public string Eliminar(int id) // metodo eliminar dato de una tabla 
         {
@@ -19,7 +19,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = id;
+                comando.Parameters.Add("@id_tipo_usuario", SqlDbType.Int).Value = id;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ELIMINAR EL REGISTRO";
             }
@@ -45,7 +45,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("sp_select_empleado", cn);
+                SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();
@@ -76,7 +76,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("", SqlDbType.VarChar).Value = buscar;
+                comando.Parameters.Add("@descrip_tipo", SqlDbType.VarChar).Value = buscar;
                 cn.Open();
                 resul = comando.ExecuteReader();
                 tabla.Load(resul);
@@ -95,24 +95,23 @@ namespace Datos_Control_Ingresos
 
             }
         }//fin del metodo buscar
-        public string Insert_empleado(Entidades_Empleado variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
+        public string Insert_tipo(Entidades_Tipo variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
         {
             string resul = "";
             SqlConnection cn = new SqlConnection();
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("sp_inser_empleado", cn);
+                SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado ;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado ;
+                comando.Parameters.Add("@id_tipo_usuario", SqlDbType.Int).Value = variables.Id_tipo;
+                comando.Parameters.Add("@descrip_tipo_usuario", SqlDbType.VarChar).Value = variables.Descrip_tipo;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
             }
             catch (Exception ex)
             {
-                resul =  ex.Message;
+                resul = ex.Message;
             }
             finally
             {
@@ -124,7 +123,7 @@ namespace Datos_Control_Ingresos
             }
             return resul;
         }
-        public string Update_empleado(Entidades_Empleado variables) //metodo actualizar datos en tabla empleados
+        public string Update_tipo(Entidades_Tipo variables) //metodo actualizar datos en tabla empleados
         {
             string resul = "";
             SqlConnection cn = new SqlConnection();

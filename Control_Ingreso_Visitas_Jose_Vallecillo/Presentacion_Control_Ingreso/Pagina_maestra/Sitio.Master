@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sitio.master.cs" Inherits="Presentacion_Control_Ingreso.Pagina_maestra.Sitio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Contro de Visitas</title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="menu">
+                <ul id="Cabe">
+                    <li><a>Registrar Entrada y Salida</a></li>
+
+                    <li><a>Administrar Empleados</a>
+                        <ul>
+                            <li><a href="../Agregar_Empleado.aspx.cs">Agregar Nuevo Empleado</a></li>
+                            <li><a>Visualizar y Modificar los Empleados</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Administrar Departamento</a>
+                        <ul>
+                            <li><a>Agregar Nuevo Departamento</a></li>
+                            <li><a>Visualizar y Modificar los Departamentos</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Administrar Ubicacion</a>
+                        <ul>
+                            <li><a>Agregar Nuevo Ubicacion</a></li>
+                            <li><a>Visualizar y Modificar las Ubicacion</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Reportes de Entrada y Salida</a>
+                        <ul>
+                            <li><a>Visualizar Reporte por Departamento</a></li>
+                            <li><a>Visualizar Reporte por dia de visita</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

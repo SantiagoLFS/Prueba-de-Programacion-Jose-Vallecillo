@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="Conexion_CI.cs" />
     <Compile Include="Metodos_Empleado.cs" />
-    <Compile Include="Metodo_Varios.cs" />
+    <Compile Include="Metodos_Tipo.cs" />
+    <Compile Include="Metodos_Ubicacion.cs" />
+    <Compile Include="Metodos_Usuario.cs" />
+    <Compile Include="Metodos_Visita.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

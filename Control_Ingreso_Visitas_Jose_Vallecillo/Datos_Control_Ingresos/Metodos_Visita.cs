@@ -8,8 +8,66 @@ using System.Data.SqlClient;
 using Entidades_Control_Ingreso;
 namespace Datos_Control_Ingresos
 {
-    public class Metodos_Empleado
+    class Metodos_Visita
     {
+        public string Insert_visita(Entidades_Visita variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
+        {
+            string resul = "";
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn = Conexion_CI.InstanciaConexion().OpenBD();
+                SqlCommand comando = new SqlCommand("", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = variables.Id_visita;
+                comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = variables.Nombre_visita;
+                comando.Parameters.Add("@apellido_visita", SqlDbType.VarChar).Value = variables.Apellido_visita;
+                cn.Open();
+                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
+            }
+            catch (Exception ex)
+            {
+                resul = ex.Message;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+
+            }
+            return resul;
+        }
+        public string Update_visita(Entidades_Visita variables) //metodo actualizar datos
+        {
+            string resul = "";
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn = Conexion_CI.InstanciaConexion().OpenBD();
+                SqlCommand comando = new SqlCommand("", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = variables.Id_visita;
+                comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = variables.Nombre_visita;
+                comando.Parameters.Add("@apellido_visita", SqlDbType.VarChar).Value = variables.Apellido_visita;
+                cn.Open();
+                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ACTUALIZO EL REGISTRO";
+            }
+            catch (Exception ex)
+            {
+                resul = ex.Message;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+
+            }
+            return resul;
+        }
         public string Eliminar(int id) // metodo eliminar dato de una tabla 
         {
             string resul = "";
@@ -19,7 +77,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = id;
+                comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = id;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ELIMINAR EL REGISTRO";
             }
@@ -45,7 +103,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("sp_select_empleado", cn);
+                SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();
@@ -76,7 +134,8 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("", SqlDbType.VarChar).Value = buscar;
+                comando.Parameters.Add("@id_visita", SqlDbType.VarChar).Value = buscar;
+                comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = buscar;
                 cn.Open();
                 resul = comando.ExecuteReader();
                 tabla.Load(resul);
@@ -94,64 +153,6 @@ namespace Datos_Control_Ingresos
                 }
 
             }
-        }//fin del metodo buscar
-        public string Insert_empleado(Entidades_Empleado variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
-        {
-            string resul = "";
-            SqlConnection cn = new SqlConnection();
-            try
-            {
-                cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("sp_inser_empleado", cn);
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado ;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado ;
-                cn.Open();
-                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
-            }
-            catch (Exception ex)
-            {
-                resul =  ex.Message;
-            }
-            finally
-            {
-                if (cn.State == ConnectionState.Open)
-                {
-                    cn.Close();
-                }
-
-            }
-            return resul;
-        }
-        public string Update_empleado(Entidades_Empleado variables) //metodo actualizar datos en tabla empleados
-        {
-            string resul = "";
-            SqlConnection cn = new SqlConnection();
-            try
-            {
-                cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
-                comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado;
-                cn.Open();
-                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ACTUALIZO EL REGISTRO";
-            }
-            catch (Exception ex)
-            {
-                resul = ex.Message;
-            }
-            finally
-            {
-                if (cn.State == ConnectionState.Open)
-                {
-                    cn.Close();
-                }
-
-            }
-            return resul;
-        }
+        }/
     }
 }

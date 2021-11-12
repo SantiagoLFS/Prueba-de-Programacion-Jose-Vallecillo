@@ -1,34 +1,26 @@
 ﻿body {
+
 }
-#form1{
-    padding:initial;
+*{
+    padding:0px;
+    margin:0px;
 }
-#menu ul{ /*estilo del menu*/
-    display:block;
-    list-style:none;
-    margin:auto;
-    padding:inherit;
+#menu {
+    margin: auto;
+    width: 600px;
+    font-family: 'Arial Rounded MT';
 }
-#menu #item{
+ul, ol {
+        list-style: none;
+    }
+.Cabe li, a {
+        background-color: blanchedalmond;
+        color: darkslategrey;
+        width: 500px;
+        text-decoration: none;
+        padding:20px 25px;
+        display:block;
+    }
+.Cabe > li{
     float:left;
 }
-#menu #item a {/*estilo de los item del menu*/
-        background: #334EFF;
-        color:azure;
-        padding:20px 20px;
-        display:block;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size :18px;
-        text-decoration:none;
-    }
-#menu #des{ /*manera de despliegue del menu*/
-        display:none;
-        position:absolute;
-        min-width:300px;
-    }
-#menu #item a:hover {
-    background: #7284F9;
-} 
-#menu #item:hover #des{
-        display:block;
-    }

@@ -5,10 +5,68 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using Entidades_Control_Ingreso;
 namespace Datos_Control_Ingresos
 {
-    public class Metodo_Varios
+    class Metodos_Ubicacion
     {
+        public string Insert_ubicacion(Entidades_Ubicacion variables)// se define la capa entidades para poder utilizar las variables almacenada en ellas
+        {
+            string resul = "";
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn = Conexion_CI.InstanciaConexion().OpenBD();
+                SqlCommand comando = new SqlCommand("", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@id_ubicacion", SqlDbType.Int).Value = variables.Id_ubicacion;
+                comando.Parameters.Add("@descrip_ubicacion", SqlDbType.VarChar).Value = variables.Descrip_ubicacion;
+                cn.Open();
+                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE INGRESO EL REGISTRO";
+            }
+            catch (Exception ex)
+            {
+                resul = ex.Message;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+
+            }
+            return resul;
+        }
+        public string Update_ubicacion(Entidades_Ubicacion variables) //metodo actualizar datos
+        {
+            string resul = "";
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn = Conexion_CI.InstanciaConexion().OpenBD();
+                SqlCommand comando = new SqlCommand("", cn);
+                comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@id_ubicacion", SqlDbType.Int).Value = variables.Id_ubicacion;
+                comando.Parameters.Add("@descrip_ubicacion", SqlDbType.VarChar).Value = variables.Descrip_ubicacion;
+
+                cn.Open();
+                resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ACTUALIZO EL REGISTRO";
+            }
+            catch (Exception ex)
+            {
+                resul = ex.Message;
+            }
+            finally
+            {
+                if (cn.State == ConnectionState.Open)
+                {
+                    cn.Close();
+                }
+
+            }
+            return resul;
+        }
         public string Eliminar(int id) // metodo eliminar dato de una tabla 
         {
             string resul = "";
@@ -18,7 +76,7 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = id;
+                comando.Parameters.Add("@id_ubicacion", SqlDbType.Int).Value = id;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ELIMINAR EL REGISTRO";
             }
@@ -44,23 +102,25 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("sp_select_empleado", cn);
+                SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();
                 tabla.Load(resul);
                 return tabla;
+
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 throw ex;
             }
             finally
             {
-                if(cn.State == ConnectionState.Open)
+                if (cn.State == ConnectionState.Open)
                 {
                     cn.Close();
                 }
-               
+
             }
         }//fin del metodo listar
         public DataTable Buscar(string buscar) //metodo para buscar en las tablas de sql contiene una variable para poder sustituirla con la de los procesos alamacenados
@@ -79,7 +139,7 @@ namespace Datos_Control_Ingresos
                 tabla.Load(resul);
                 return tabla;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 throw ex;
             }

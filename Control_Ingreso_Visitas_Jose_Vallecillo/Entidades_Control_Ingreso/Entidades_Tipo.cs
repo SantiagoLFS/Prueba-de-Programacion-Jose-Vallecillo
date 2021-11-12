@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades_Control_Ingreso
 {
-    class Entidades_Tipo
+    public class Entidades_Tipo
     {
         public int Id_tipo { set; get; }
         public string Descrip_tipo { set; get; }

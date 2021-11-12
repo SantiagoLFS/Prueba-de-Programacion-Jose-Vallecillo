@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Presentacion_Control_Ingreso
+namespace Presentacion_Control_Ingreso.Pagina_maestra
 {
 
 
-    public partial class Panel_Control1
+    public partial class Sitio
     {
 
         /// <summary>
