@@ -9,12 +9,12 @@
     
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="Master.css" rel="stylesheet" type="text/css" />
+    <link href="Master_Sty.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <div id="menu">
+            <div class="menu">
                 <ul id="Cabe">
                     <li><a>Registrar Entrada y Salida</a></li>
 

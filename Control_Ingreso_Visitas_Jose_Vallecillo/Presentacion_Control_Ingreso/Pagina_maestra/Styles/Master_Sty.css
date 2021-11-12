@@ -10,7 +10,7 @@
     width: 600px;
     font-family: 'Arial Rounded MT';
 }
-ul, ol {
+#menu ul , ol {
         list-style: none;
     }
 .Cabe li, a {

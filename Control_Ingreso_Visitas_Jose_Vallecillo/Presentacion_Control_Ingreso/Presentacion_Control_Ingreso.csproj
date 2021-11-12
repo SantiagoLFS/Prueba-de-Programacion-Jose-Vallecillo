@@ -43,7 +43,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.10.3.4\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation.DependencyInjectionExtensions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.DependencyInjectionExtensions.10.3.4\lib\netstandard2.0\FluentValidation.DependencyInjectionExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,19 +76,110 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Agregar_Empleado.aspx" />
+    <Content Include="Frm_Administrar\Admin_Departamento.aspx" />
+    <Content Include="Frm_Administrar\Admin_Empleado.aspx" />
+    <Content Include="Frm_Administrar\Admin_Tipo.aspx" />
+    <Content Include="Frm_Administrar\Admin_Ubicacion.aspx" />
+    <Content Include="Frm_Administrar\Admin_Usuario.aspx" />
+    <Content Include="Frm_Administrar\Admin_Visita.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Departamento.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Empleado.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Tipo.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Ubicacion.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Usuario.aspx" />
+    <Content Include="Frm_Agregar\Agregar_Visita.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Pagina_maestra\Styles\Master.css" />
+    <Content Include="Pagina_maestra\Styles\Master_Sty.css" />
     <Content Include="Pagina_maestra\Sitio_Control.aspx" />
+    <Content Include="Registro_Visita.aspx" />
+    <Content Include="Reporte_por_Departamento.aspx" />
+    <Content Include="Reporte_Por_Fecha.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agregar_Empleado.aspx.cs">
+    <Compile Include="Frm_Administrar\Admin_Departamento.aspx.cs">
+      <DependentUpon>Admin_Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Departamento.aspx.designer.cs">
+      <DependentUpon>Admin_Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Empleado.aspx.cs">
+      <DependentUpon>Admin_Empleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Empleado.aspx.designer.cs">
+      <DependentUpon>Admin_Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Tipo.aspx.cs">
+      <DependentUpon>Admin_Tipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Tipo.aspx.designer.cs">
+      <DependentUpon>Admin_Tipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Ubicacion.aspx.cs">
+      <DependentUpon>Admin_Ubicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Ubicacion.aspx.designer.cs">
+      <DependentUpon>Admin_Ubicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Usuario.aspx.cs">
+      <DependentUpon>Admin_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Usuario.aspx.designer.cs">
+      <DependentUpon>Admin_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Visita.aspx.cs">
+      <DependentUpon>Admin_Visita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Administrar\Admin_Visita.aspx.designer.cs">
+      <DependentUpon>Admin_Visita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Departamento.aspx.cs">
+      <DependentUpon>Agregar_Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Departamento.aspx.designer.cs">
+      <DependentUpon>Agregar_Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Empleado.aspx.cs">
       <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Agregar_Empleado.aspx.designer.cs">
+    <Compile Include="Frm_Agregar\Agregar_Empleado.aspx.designer.cs">
       <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Tipo.aspx.cs">
+      <DependentUpon>Agregar_Tipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Tipo.aspx.designer.cs">
+      <DependentUpon>Agregar_Tipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Ubicacion.aspx.cs">
+      <DependentUpon>Agregar_Ubicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Ubicacion.aspx.designer.cs">
+      <DependentUpon>Agregar_Ubicacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Usuario.aspx.cs">
+      <DependentUpon>Agregar_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Usuario.aspx.designer.cs">
+      <DependentUpon>Agregar_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Visita.aspx.cs">
+      <DependentUpon>Agregar_Visita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_Agregar\Agregar_Visita.aspx.designer.cs">
+      <DependentUpon>Agregar_Visita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -103,6 +203,27 @@
     <Compile Include="Pagina_maestra\Sitio_Control.aspx.designer.cs">
       <DependentUpon>Sitio_Control.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Registro_Visita.aspx.cs">
+      <DependentUpon>Registro_Visita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro_Visita.aspx.designer.cs">
+      <DependentUpon>Registro_Visita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_por_Departamento.aspx.cs">
+      <DependentUpon>Reporte_por_Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte_por_Departamento.aspx.designer.cs">
+      <DependentUpon>Reporte_por_Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte_Por_Fecha.aspx.cs">
+      <DependentUpon>Reporte_Por_Fecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte_Por_Fecha.aspx.designer.cs">
+      <DependentUpon>Reporte_Por_Fecha.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -120,6 +241,7 @@
       <Name>Negocios_Control_Ingresos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

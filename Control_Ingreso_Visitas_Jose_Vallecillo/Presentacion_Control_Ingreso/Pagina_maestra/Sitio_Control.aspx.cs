@@ -13,5 +13,10 @@ namespace Presentacion_Control_Ingreso
         {
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
