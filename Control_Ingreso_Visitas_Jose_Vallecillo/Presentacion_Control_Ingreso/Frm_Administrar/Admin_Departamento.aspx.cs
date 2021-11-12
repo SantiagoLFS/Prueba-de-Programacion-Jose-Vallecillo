@@ -27,7 +27,7 @@ namespace Presentacion_Control_Ingreso
 
         protected void g_Admin_Departamento(object sender, GridViewDeleteEventArgs e)
         {
-            GridViewRow row = (GridViewRow)GridView1.Rows[e.RowIndex];
+            GridViewRow llenar = (GridViewRow)GridView1.Rows[e.RowIndex];
             Negocios_Departamento.Eliminar_departamento(int.Parse(GridView1.DataKeys[e.RowIndex].Value.ToString()));
             GridView1.DataSource = Negocios_Departamento.Listar();
             GridView1.DataBind();
