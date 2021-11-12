@@ -16,11 +16,10 @@ namespace Negocios_Control_Ingresos
             Metodos_Tipo datos = new Metodos_Tipo();
             return datos.Listar();
         }//fin listar
-        public static string Insert_tipo(int id_tipo, string descrip_tipo) // llama el metodo insertar de la capa datos de la clase metodos_empleado
+        public static string Insert_tipo( string descrip_tipo) // llama el metodo insertar de la capa datos de la clase metodos_empleado
         {
             Metodos_Tipo upd = new Metodos_Tipo();
             Entidades_Tipo vari = new Entidades_Tipo();
-            vari.Id_tipo = id_tipo;
             vari.Descrip_tipo = descrip_tipo;
             return upd.Insert_tipo(vari);
         }//fin insertar
@@ -29,11 +28,11 @@ namespace Negocios_Control_Ingresos
             Metodos_Ubicacion dele = new Metodos_Ubicacion();
             return dele.Eliminar(id);
         }//fin eliminar
-        public static string Update_tipo(int id_tipo, string descrip_tipo) // llama el metodo actualizar de la capa datos de la clase metodos_empleado
+        public static string Update_tipo( string descrip_tipo) // llama el metodo actualizar de la capa datos de la clase metodos_empleado
         {
             Metodos_Tipo upd = new Metodos_Tipo();
             Entidades_Tipo vari = new Entidades_Tipo();
-            vari.Id_tipo = id_tipo;
+           
             vari.Descrip_tipo = descrip_tipo;
 
             return upd.Update_tipo(vari);

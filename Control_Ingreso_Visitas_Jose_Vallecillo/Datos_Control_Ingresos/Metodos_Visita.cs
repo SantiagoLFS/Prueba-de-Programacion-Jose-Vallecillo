@@ -17,7 +17,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_inser_visita", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("@id_visita", SqlDbType.Int).Value = variables.Id_visita;
                 comando.Parameters.Add("@nombre_visita", SqlDbType.VarChar).Value = variables.Nombre_visita;

@@ -16,11 +16,10 @@ namespace Negocios_Control_Ingresos
             Metodos_Ubicacion datos = new Metodos_Ubicacion();
             return datos.Listar();
         }//fin listar
-        public static string Insert_visita(int id_ubicacion, string descrip_ubicacion) // llama el metodo insertar de la capa datos de la clase metodos_empleado
+        public static string Insert_ubicacion(string descrip_ubicacion) // llama el metodo insertar de la capa datos de la clase metodos_empleado
         {
             Metodos_Ubicacion upd = new Metodos_Ubicacion();
             Entidades_Ubicacion vari = new Entidades_Ubicacion();
-            vari.Id_ubicacion = id_ubicacion;
             vari.Descrip_ubicacion = descrip_ubicacion;
             return upd.Insert_ubicacion(vari);
         }//fin insertar
@@ -33,7 +32,6 @@ namespace Negocios_Control_Ingresos
         {
             Metodos_Ubicacion upd = new Metodos_Ubicacion();
             Entidades_Ubicacion vari = new Entidades_Ubicacion();
-            vari.Id_ubicacion = id_ubicacion;
             vari.Descrip_ubicacion = descrip_ubicacion;
             
             return upd.Update_ubicacion(vari);
