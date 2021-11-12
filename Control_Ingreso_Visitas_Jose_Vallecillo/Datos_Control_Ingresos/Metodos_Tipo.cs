@@ -132,9 +132,8 @@ namespace Datos_Control_Ingresos
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
                 SqlCommand comando = new SqlCommand("", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_empleado;
-                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Nombre_empleado;
-                comando.Parameters.Add("@apellido_empleado", SqlDbType.VarChar).Value = variables.Apellido_empleado;
+                comando.Parameters.Add("@id_empleado", SqlDbType.Int).Value = variables.Id_tipo;
+                comando.Parameters.Add("@nombre_empleado", SqlDbType.VarChar).Value = variables.Descrip_tipo;
                 cn.Open();
                 resul = comando.ExecuteNonQuery() == 1 ? "OK" : "NO SE ACTUALIZO EL REGISTRO";
             }
