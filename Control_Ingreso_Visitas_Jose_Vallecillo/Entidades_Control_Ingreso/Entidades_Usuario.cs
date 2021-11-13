@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades_Control_Ingreso
 {
-    class Entidades_Usuario
+    public class Entidades_Usuario
     {
         public string Nombre_usuario { set; get; }
         public string Contrasena_usuario { set; get; }

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <center style="height: 459px">
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Busca por nombre los Departamentos para poder administrarlos"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Busca los Departamentos por nombre"></asp:Label>
         <br />
         <br />
         <asp:TextBox ID="TextBox1" runat="server" Width="288px" EnableViewState="true"></asp:TextBox>

@@ -130,9 +130,9 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_buscar_ubicacion", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("", SqlDbType.VarChar).Value = buscar;
+                comando.Parameters.Add("@busca_ubicacion", SqlDbType.VarChar).Value = buscar;
                 cn.Open();
                 resul = comando.ExecuteReader();
                 tabla.Load(resul);
