@@ -15,7 +15,7 @@ namespace Negocios_Control_Ingresos
             Metodos_Usuario datos = new Metodos_Usuario();
             return datos.Listar_usuario();
         }//fin listar
-        public static string Insert_empleado(string nombre_usuario, string contrasena_usuario, int id_empleado, int id_tipo) // llama el metodo insertar de la capa datos de la clase metodos_empleado
+        public static string Insert_usurio(string nombre_usuario, string contrasena_usuario, int id_empleado, int id_tipo) // llama el metodo insertar de la capa datos de la clase metodos_empleado
         {
             Metodos_Usuario upd = new Metodos_Usuario();
             Entidades_Usuario vari = new Entidades_Usuario();
