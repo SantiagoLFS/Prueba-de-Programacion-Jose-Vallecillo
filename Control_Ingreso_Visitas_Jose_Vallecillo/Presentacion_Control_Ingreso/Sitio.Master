@@ -20,7 +20,7 @@
 
                     <li><a>Administrar Empleados</a>
                         <ul>
-                            <li><a>Agregar Nuevo Empleado</a></li>
+                            <li><a href="Agregar_Departamento.aspx.cs">Agregar Nuevo Empleado</a></li>
                             <li><a>Visualizar y Modificar los Empleados</a></li>
                         </ul>
                     </li>

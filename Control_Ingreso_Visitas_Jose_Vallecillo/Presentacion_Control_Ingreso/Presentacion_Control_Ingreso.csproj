@@ -76,20 +76,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Frm_Administrar\Admin_Departamento.aspx" />
-    <Content Include="Frm_Administrar\Admin_Empleado.aspx" />
-    <Content Include="Frm_Administrar\Admin_Tipo.aspx" />
-    <Content Include="Frm_Administrar\Admin_Ubicacion.aspx" />
-    <Content Include="Frm_Administrar\Admin_Usuario.aspx" />
-    <Content Include="Frm_Administrar\Admin_Visita.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Departamento.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Empleado.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Tipo.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Ubicacion.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Usuario.aspx" />
-    <Content Include="Frm_Agregar\Agregar_Visita.aspx" />
+    <Content Include="Admin_Departamento.aspx" />
+    <Content Include="Admin_Empleado.aspx" />
+    <Content Include="Admin_Tipo.aspx" />
+    <Content Include="Admin_Ubicacion.aspx" />
+    <Content Include="Admin_Usuario.aspx" />
+    <Content Include="Admin_Visita.aspx" />
+    <Content Include="Agregar_Departamento.aspx" />
+    <Content Include="Agregar_Empleado.aspx" />
+    <Content Include="Agregar_Tipo.aspx" />
+    <Content Include="Agregar_Ubicacion.aspx" />
+    <Content Include="Agregar_Usuario.aspx" />
+    <Content Include="Agregar_Visita.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Pagina_maestra\Styles\Master_Sty.css" />
+    <Content Include="Master_Sty.css" />
     <Content Include="Sitio_Control.aspx" />
     <Content Include="Registro_Visita.aspx" />
     <Content Include="Reporte_Por_Fecha.aspx" />
@@ -97,88 +97,88 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Administrar\Admin_Departamento.aspx.cs">
+    <Compile Include="Admin_Departamento.aspx.cs">
       <DependentUpon>Admin_Departamento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Departamento.aspx.designer.cs">
+    <Compile Include="Admin_Departamento.aspx.designer.cs">
       <DependentUpon>Admin_Departamento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Empleado.aspx.cs">
+    <Compile Include="Admin_Empleado.aspx.cs">
       <DependentUpon>Admin_Empleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Empleado.aspx.designer.cs">
+    <Compile Include="Admin_Empleado.aspx.designer.cs">
       <DependentUpon>Admin_Empleado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Tipo.aspx.cs">
+    <Compile Include="Admin_Tipo.aspx.cs">
       <DependentUpon>Admin_Tipo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Tipo.aspx.designer.cs">
+    <Compile Include="Admin_Tipo.aspx.designer.cs">
       <DependentUpon>Admin_Tipo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Ubicacion.aspx.cs">
+    <Compile Include="Admin_Ubicacion.aspx.cs">
       <DependentUpon>Admin_Ubicacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Ubicacion.aspx.designer.cs">
+    <Compile Include="Admin_Ubicacion.aspx.designer.cs">
       <DependentUpon>Admin_Ubicacion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Usuario.aspx.cs">
+    <Compile Include="Admin_Usuario.aspx.cs">
       <DependentUpon>Admin_Usuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Usuario.aspx.designer.cs">
+    <Compile Include="Admin_Usuario.aspx.designer.cs">
       <DependentUpon>Admin_Usuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Visita.aspx.cs">
+    <Compile Include="Admin_Visita.aspx.cs">
       <DependentUpon>Admin_Visita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Administrar\Admin_Visita.aspx.designer.cs">
+    <Compile Include="Admin_Visita.aspx.designer.cs">
       <DependentUpon>Admin_Visita.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Departamento.aspx.cs">
+    <Compile Include="Agregar_Departamento.aspx.cs">
       <DependentUpon>Agregar_Departamento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Departamento.aspx.designer.cs">
+    <Compile Include="Agregar_Departamento.aspx.designer.cs">
       <DependentUpon>Agregar_Departamento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Empleado.aspx.cs">
+    <Compile Include="Agregar_Empleado.aspx.cs">
       <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Empleado.aspx.designer.cs">
+    <Compile Include="Agregar_Empleado.aspx.designer.cs">
       <DependentUpon>Agregar_Empleado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Tipo.aspx.cs">
+    <Compile Include="Agregar_Tipo.aspx.cs">
       <DependentUpon>Agregar_Tipo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Tipo.aspx.designer.cs">
+    <Compile Include="Agregar_Tipo.aspx.designer.cs">
       <DependentUpon>Agregar_Tipo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Ubicacion.aspx.cs">
+    <Compile Include="Agregar_Ubicacion.aspx.cs">
       <DependentUpon>Agregar_Ubicacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Ubicacion.aspx.designer.cs">
+    <Compile Include="Agregar_Ubicacion.aspx.designer.cs">
       <DependentUpon>Agregar_Ubicacion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Usuario.aspx.cs">
+    <Compile Include="Agregar_Usuario.aspx.cs">
       <DependentUpon>Agregar_Usuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Usuario.aspx.designer.cs">
+    <Compile Include="Agregar_Usuario.aspx.designer.cs">
       <DependentUpon>Agregar_Usuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Visita.aspx.cs">
+    <Compile Include="Agregar_Visita.aspx.cs">
       <DependentUpon>Agregar_Visita.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frm_Agregar\Agregar_Visita.aspx.designer.cs">
+    <Compile Include="Agregar_Visita.aspx.designer.cs">
       <DependentUpon>Agregar_Visita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
