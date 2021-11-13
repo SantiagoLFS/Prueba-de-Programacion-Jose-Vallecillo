@@ -90,7 +90,7 @@
     <Content Include="Frm_Agregar\Agregar_Visita.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Pagina_maestra\Styles\Master_Sty.css" />
-    <Content Include="Pagina_maestra\Sitio_Control.aspx" />
+    <Content Include="Sitio_Control.aspx" />
     <Content Include="Registro_Visita.aspx" />
     <Content Include="Reporte_Por_Fecha.aspx" />
     <Content Include="Reporte_Visitas_Departamento.aspx" />
@@ -188,19 +188,19 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pagina_maestra\Sitio.Master.cs">
+    <Compile Include="Sitio.Master.cs">
       <DependentUpon>Sitio.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pagina_maestra\Sitio.Master.designer.cs">
+    <Compile Include="Sitio.Master.designer.cs">
       <DependentUpon>Sitio.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pagina_maestra\Sitio_Control.aspx.cs">
+    <Compile Include="Sitio_Control.aspx.cs">
       <DependentUpon>Sitio_Control.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pagina_maestra\Sitio_Control.aspx.designer.cs">
+    <Compile Include="Sitio_Control.aspx.designer.cs">
       <DependentUpon>Sitio_Control.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registro_Visita.aspx.cs">
@@ -227,7 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Pagina_maestra\Sitio.Master" />
+    <Content Include="Sitio.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -20,7 +20,7 @@
 
                     <li><a>Administrar Empleados</a>
                         <ul>
-                            <li><a href="../Agregar_Empleado.aspx.cs">Agregar Nuevo Empleado</a></li>
+                            <li><a>Agregar Nuevo Empleado</a></li>
                             <li><a>Visualizar y Modificar los Empleados</a></li>
                         </ul>
                     </li>
@@ -39,7 +39,9 @@
                     <li><a>Reportes de Entrada y Salida</a>
                         <ul>
                             <li><a>Visualizar Reporte por Departamento</a></li>
-                            <li><a>Visualizar Reporte por dia de visita</a></li>
+                            <li><a>Visualizar Reporte por dia de visita&nbsp;
+                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                </a></li>
                         </ul>
                     </li>
                 </ul>
