@@ -1,2 +1,34 @@
 ﻿body {
+    background : #beb6b6
+}
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing :border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+.menu{
+    width:1000px;
+    margin: 30px auto;
+    background :#ffffff;
+
+}
+.menu ul{
+    list-style:none;
+
+}
+.menu > li{
+    position:relative;
+    display: inline-block;
+}
+.cabe > li >a{
+    display: block;
+    padding: 15px 20px;
+    font-family:Algerian;
+
+}
+.cabe {
+    display :block;
+    padding: 20pc 15px;
 }

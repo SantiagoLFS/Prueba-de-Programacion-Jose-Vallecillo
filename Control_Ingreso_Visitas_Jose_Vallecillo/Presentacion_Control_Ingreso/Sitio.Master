@@ -9,38 +9,38 @@
     
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="Master_Sty.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
+      <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
         <div>
             <div class="menu">
-                <ul id="Cabe">
+                <ul class="Cabe">
                     <li><a>Registrar Entrada y Salida</a></li>
 
                     <li><a>Administrar Empleados</a>
-                        <ul>
+                        <ul class="submenu">
                             <li><a href="Agregar_Departamento.aspx">Agregar Nuevo Empleado</a></li>
-                            <li><a>Visualizar y Modificar los Empleados</a></li>
+                            <li><a href="Admin_Empleado.aspx">Visualizar y Modificar los Empleados</a></li>
                         </ul>
                     </li>
                     <li><a>Administrar Departamento</a>
-                        <ul>
-                            <li><a>Agregar Nuevo Departamento</a></li>
-                            <li><a>Visualizar y Modificar los Departamentos</a></li>
+                        <ul class="submenu">
+                            <li><a href="Agregar_Departamento.aspx">Agregar Nuevo Departamento</a></li>
+                            <li><a href="Admin_Departamento.aspx">Visualizar y Modificar los Departamentos</a></li>
                         </ul>
                     </li>
                     <li><a>Administrar Ubicacion</a>
-                        <ul>
-                            <li><a>Agregar Nuevo Ubicacion</a></li>
-                            <li><a>Visualizar y Modificar las Ubicacion</a></li>
+                        <ul class="submenu">
+                            <li><a href="Agregar_Ubicacion.aspx">Agregar Nuevo Ubicacion</a></li>
+                            <li><a href="Admin_Ubicacion.aspx">Visualizar y Modificar las Ubicacion</a></li>
                         </ul>
                     </li>
                     <li><a>Reportes de Entrada y Salida</a>
-                        <ul>
-                            <li><a>Visualizar Reporte por Departamento</a></li>
-                            <li><a>Visualizar Reporte por dia de visita&nbsp;
-                                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        <ul class="submenu">
+                            <li><a href="Reporte_Por_Fecha.aspx">Visualizar Reporte por Departamento</a></li>
+                            <li><a href="Reporte_Visitas_Departamento.aspx">Visualizar Reporte por dia de visita&nbsp;
                                 </a></li>
                         </ul>
                     </li>
@@ -48,11 +48,11 @@
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <center>
-                     <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
                 </center>
                 
             </asp:ContentPlaceHolder>
         </div>
+          
     </form>
 </body>
 </html>
