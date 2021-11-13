@@ -25,8 +25,8 @@ namespace Negocios_Control_Ingresos
         }//fin insertar
         public static string Eliminar(int id) //llama al metodo eliminar de la capa datos de la clase metodos varios 
         {
-            Metodos_Ubicacion dele = new Metodos_Ubicacion();
-            return dele.Eliminar(id);
+            Metodos_Tipo dele = new Metodos_Tipo();
+            return dele.Eliminar_tipo(id);
         }//fin eliminar
         public static string Update_tipo( string descrip_tipo) // llama el metodo actualizar de la capa datos de la clase metodos_empleado
         {

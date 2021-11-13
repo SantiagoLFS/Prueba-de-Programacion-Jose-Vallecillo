@@ -27,5 +27,11 @@ namespace Presentacion_Control_Ingreso
             GridView1.DataSource = Negocios_Empleado.Listar();
             GridView1.DataBind();
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            GridView1.DataSource = Negocios_Empleado.Buscar(TextBox1.Text);
+            GridView1.DataBind();
+        }
     }
 }

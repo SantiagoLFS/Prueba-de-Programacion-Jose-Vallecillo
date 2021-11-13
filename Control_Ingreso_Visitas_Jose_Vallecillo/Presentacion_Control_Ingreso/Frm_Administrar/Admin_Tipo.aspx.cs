@@ -14,18 +14,24 @@ namespace Presentacion_Control_Ingreso
 
         }
 
-        protected void Admin_tipo(object sender, GridViewDeleteEventArgs e)
+        protected void gh_Admin_tipo(object sender, GridViewDeleteEventArgs e)
         {
-            GridViewRow dato = (GridViewRow)GridView1.Rows[e.RowIndex];
-            Negocios_Tipo.Eliminar(int.Parse(GridView1.DataKeys[e.RowIndex].Value.ToString()));
-            GridView1.DataSource = Negocios_Tipo.Listar();
-            GridView1.DataBind();
+            GridViewRow dato = (GridViewRow)gv_Tipo.Rows[e.RowIndex];
+            Negocios_Tipo.Eliminar(int.Parse(gv_Tipo.DataKeys[e.RowIndex].Value.ToString()));
+            gv_Tipo.DataSource = Negocios_Tipo.Listar();
+            gv_Tipo.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            GridView1.DataSource = Negocios_Tipo.Listar();
-            GridView1.DataBind();
+            gv_Tipo.DataSource = Negocios_Tipo.Listar();
+            gv_Tipo.DataBind();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            gv_Tipo.DataSource = Negocios_Tipo.Buscar(TextBox1.Text);
+            gv_Tipo.DataBind();
         }
     }
 }

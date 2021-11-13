@@ -10,7 +10,7 @@ namespace Datos_Control_Ingresos
 {
     public class Metodos_Tipo
     {
-        public string Eliminar(int id) // metodo eliminar dato de una tabla 
+        public string Eliminar_tipo(int id) // metodo eliminar dato de una tabla 
         {
             string resul = "";
             SqlConnection cn = new SqlConnection();
@@ -74,9 +74,9 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_buscar_tipo", cn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@descrip_tipo", SqlDbType.VarChar).Value = buscar;
+                comando.Parameters.Add("@busca_tipo_usuario", SqlDbType.VarChar).Value = buscar;
                 cn.Open();
                 resul = comando.ExecuteReader();
                 tabla.Load(resul);

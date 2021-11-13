@@ -73,7 +73,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_eliminar_ubicacion", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 comando.Parameters.Add("@id_ubicacion", SqlDbType.Int).Value = id;
                 cn.Open();
@@ -101,7 +101,7 @@ namespace Datos_Control_Ingresos
             try
             {
                 cn = Conexion_CI.InstanciaConexion().OpenBD();
-                SqlCommand comando = new SqlCommand("", cn);
+                SqlCommand comando = new SqlCommand("sp_select_ubicaciones", cn);
                 comando.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 resul = comando.ExecuteReader();
