@@ -13,5 +13,10 @@ namespace Presentacion_Control_Ingreso.Pagina_maestra
         {
            
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

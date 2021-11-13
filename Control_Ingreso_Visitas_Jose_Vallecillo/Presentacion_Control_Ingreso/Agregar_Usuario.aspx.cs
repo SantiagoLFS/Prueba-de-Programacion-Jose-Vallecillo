@@ -22,21 +22,11 @@ namespace Presentacion_Control_Ingreso
         protected void Button1_Click(object sender, EventArgs e)
         {
             
-            try
-            {
-                string resp = "";
-                resp = Negocios_Usuario.Insert_usurio(TextBox1.Text, TextBox2.Text, int.Parse(TextBox3.Text), int.Parse(DropDownList1.Text));
-                if (resp.Equals("OK"))
-                {
-                    TextBox1.Text = "";
-                    TextBox2.Text = "";
-                    TextBox3.Text = "";
-                }
-            }
-            catch
-            {
+           
+                 Negocios_Usuario.Insert_usurio(TextBox1.Text, TextBox2.Text, int.Parse(TextBox3.Text), int.Parse(DropDownList1.Text));
+                
 
-            }
+        
         }
     }
 }

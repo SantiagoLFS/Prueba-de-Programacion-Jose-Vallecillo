@@ -20,7 +20,7 @@
 
                     <li><a>Administrar Empleados</a>
                         <ul>
-                            <li><a href="Agregar_Departamento.aspx.cs">Agregar Nuevo Empleado</a></li>
+                            <li><a href="Agregar_Departamento.aspx">Agregar Nuevo Empleado</a></li>
                             <li><a>Visualizar y Modificar los Empleados</a></li>
                         </ul>
                     </li>
@@ -47,6 +47,10 @@
                 </ul>
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <center>
+                     <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                </center>
+                
             </asp:ContentPlaceHolder>
         </div>
     </form>

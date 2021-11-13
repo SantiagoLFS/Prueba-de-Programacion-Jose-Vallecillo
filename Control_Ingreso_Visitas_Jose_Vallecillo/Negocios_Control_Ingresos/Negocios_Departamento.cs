@@ -16,10 +16,11 @@ namespace Negocios_Control_Ingresos
             Metodos_Departamento datos = new Metodos_Departamento();
             return datos.Listar();
         }//fin listar
-        public static string Insert_departamento(string nombre_departamento) // llama el metodo insertar de la capa datos de la clase metodos_empleado
+        public static string Insert_departamento(int id_departamento, string nombre_departamento) // llama el metodo insertar de la capa datos de la clase metodos_empleado
         {
             Metodos_Departamento upd = new Metodos_Departamento();
             Entidades_Departamento vari = new Entidades_Departamento();
+            vari.Id_departamento = id_departamento;
             vari.Nombre_departamento = nombre_departamento;
             return upd.Insert_departamento(vari);
         }//fin insertar

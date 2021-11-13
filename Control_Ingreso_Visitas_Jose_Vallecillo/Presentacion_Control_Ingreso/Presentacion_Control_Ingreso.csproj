@@ -89,11 +89,11 @@
     <Content Include="Agregar_Usuario.aspx" />
     <Content Include="Agregar_Visita.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Master_Sty.css" />
     <Content Include="Sitio_Control.aspx" />
     <Content Include="Registro_Visita.aspx" />
     <Content Include="Reporte_Por_Fecha.aspx" />
     <Content Include="Reporte_Visitas_Departamento.aspx" />
+    <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -23,11 +23,15 @@
                 <asp:Label ID="Label2" runat="server" Text="Usuario :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="TextBox1" runat="server" Width="222px"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
                 <br />
                 <br />
                 <asp:Label ID="Label3" runat="server" Text="Contraseña :"></asp:Label>
 &nbsp;
                 <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" Width="222px"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
                 <br />
                 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

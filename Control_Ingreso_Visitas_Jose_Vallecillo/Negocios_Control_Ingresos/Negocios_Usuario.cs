@@ -10,6 +10,7 @@ namespace Negocios_Control_Ingresos
 {
     public class Negocios_Usuario
     {
+        
         public static DataTable Listar_usuario()// llama al metodo listar de la capa datos de la clase metodos varios 
         {
             Metodos_Usuario datos = new Metodos_Usuario();

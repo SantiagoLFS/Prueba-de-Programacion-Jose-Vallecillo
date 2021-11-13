@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pagina_maestra/Sitio.Master" AutoEventWireup="true" CodeBehind="Agregar_Ubicacion.aspx.cs" Inherits="Presentacion_Control_Ingreso.Agregar_Ubicacion" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Sitio.Master" AutoEventWireup="true" CodeBehind="Agregar_Ubicacion.aspx.cs" Inherits="Presentacion_Control_Ingreso.Agregar_Ubicacion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -7,6 +7,7 @@
         <asp:Label ID="Label1" runat="server" Text="Agregar Nueva Ubicacion"></asp:Label>
         <br />
         <br />
+        <asp:Label ID="Label2" runat="server" Text="Nombre ubicacion :"></asp:Label>
         <asp:TextBox ID="Txt_id_ubica" runat="server"></asp:TextBox>
         <br />
         <br />

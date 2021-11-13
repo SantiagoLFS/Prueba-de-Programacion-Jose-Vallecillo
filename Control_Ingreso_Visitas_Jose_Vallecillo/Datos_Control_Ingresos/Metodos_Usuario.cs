@@ -11,7 +11,6 @@ namespace Datos_Control_Ingresos
 {
     public class Metodos_Usuario
     {
-        
         public string Eliminar_usuario(int id) // metodo eliminar dato de una tabla 
         {
             string resul = "";

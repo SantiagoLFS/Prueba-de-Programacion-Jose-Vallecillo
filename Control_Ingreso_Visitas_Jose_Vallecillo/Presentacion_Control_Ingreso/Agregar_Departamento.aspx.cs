@@ -16,19 +16,7 @@ namespace Presentacion_Control_Ingreso
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string resp = "";
-                resp = Negocios_Departamento.Insert_departamento(Txt_departamento.Text);
-                if (resp.Equals("OK"))
-                {
-                    Txt_departamento.Text = "";
-                }
-            }
-            catch
-            {
-
-            }
+                 Negocios_Departamento.Insert_departamento(int.Parse(TextBox1.Text), Txt_departamento.Text);
         }
     }
 }
